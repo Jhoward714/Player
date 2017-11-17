@@ -1,0 +1,23 @@
+package application;
+
+import javafx.scene.control.Button;
+import javafx.scene.control.Slider;
+import javafx.scene.layout.HBox;
+import javafx.scene.media.MediaPlayer;
+
+public class MediaBar extends HBox {
+	
+	Slider time = new Slider();
+	Slider volume = new Slider();
+	
+	Button playButton = new Button();
+	
+	Label volume = new Label("Volume: ");
+	
+	MediaPlayer player;
+	
+	public MediaBar(MediaPlayer play){
+		player = play;
+	}
+
+}
